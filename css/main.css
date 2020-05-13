@@ -39,7 +39,12 @@ html {
 body {
   font-family: source, monospace;
 }
-
+@media screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 ::-moz-selection {
   color: aliceblue;
   background-color: #455a64;
