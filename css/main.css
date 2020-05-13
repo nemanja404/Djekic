@@ -39,12 +39,7 @@ html {
 body {
   font-family: source, monospace;
 }
-@media screen and (max-width: 600px) {
-  body {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-}
+
 ::-moz-selection {
   color: aliceblue;
   background-color: #455a64;
@@ -457,18 +452,18 @@ svg {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: calc(100vh - 16rem);
+  min-height: calc(100vh - 16rem);
 }
 
 @media screen and (max-width: 1200px) {
   .carousel {
-    height: calc(100vh - 14.4rem);
+    min-height: calc(100vh - 14.4rem);
   }
 }
 
 @media screen and (max-width: 900px) {
   .carousel {
-    height: calc(100vh - 26.3rem);
+    min-height: calc(100vh - 26.3rem);
   }
 }
 
@@ -477,7 +472,9 @@ svg {
   padding: 1rem 0;
   text-align: center;
 }
-
+.head {
+  height: 100vh;
+}
 .carousel__slide {
   position: absolute;
   top: 0;
