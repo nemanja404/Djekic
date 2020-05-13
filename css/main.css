@@ -452,22 +452,25 @@ svg {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: calc(100vh - 16rem);
-  transition: height 1000000s ease;
-  -webkit-transition: height 1000000s ease;
-  -moz-transition: height 1000000s ease;
-  -o-transition: height 1000000s ease;
+  height: calc(100vh - 16rem);
 }
 
 @media screen and (max-width: 1200px) {
   .carousel {
-    min-height: calc(100vh - 14.4rem);
+    height: calc(100vh - 14.4rem);
   }
 }
 
 @media screen and (max-width: 900px) {
   .carousel {
-    min-height: calc(100vh - 26.3rem);
+    height: calc(100vh - 26.3rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    min-height: calc(100vh - 27rem);
+    border-bottom: 2px solid red;
   }
 }
 
