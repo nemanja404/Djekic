@@ -269,6 +269,13 @@ svg {
     margin-bottom: 2rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .info-bar__logo {
+    width: 15rem;
+    height: 5rem;
+    margin-top: 2rem;
+  }
+}
 
 .info-bar__img {
   width: 100%;
@@ -463,6 +470,12 @@ svg {
 @media screen and (max-width: 900px) {
   .carousel {
     min-height: calc(100vh - 26.3rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    min-height: calc(100vh - 23rem);
   }
 }
 
