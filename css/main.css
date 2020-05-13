@@ -453,6 +453,10 @@ svg {
   overflow: hidden;
   width: 100%;
   min-height: calc(100vh - 16rem);
+  transition: height 1000000s ease;
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
 }
 
 @media screen and (max-width: 1200px) {
@@ -472,9 +476,7 @@ svg {
   padding: 1rem 0;
   text-align: center;
 }
-.head {
-  height: 100vh;
-}
+
 .carousel__slide {
   position: absolute;
   top: 0;
