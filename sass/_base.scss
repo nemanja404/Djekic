@@ -1,7 +1,7 @@
 @font-face {
-  src: local("RobotoMono-Regular"), local("Roboto Mono Regular"),
-    url("../font/RobotoMono-Regular.ttf");
-  font-family: roboto;
+  src: local("SourceCodePro-Regular"), local("Source Code Pro Regular"),
+    url("../font/SourceCodePro-Regular.ttf");
+  font-family: source;
 }
 
 @mixin res($breakpoint) {
@@ -54,7 +54,7 @@ html {
   }
 }
 body {
-  font-family: roboto;
+  font-family: source, monospace;
 }
 
 ::selection {

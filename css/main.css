@@ -1,6 +1,6 @@
 @font-face {
-  src: local("RobotoMono-Regular"), local("Roboto Mono Regular"), url("../font/RobotoMono-Regular.ttf");
-  font-family: roboto;
+  src: local("SourceCodePro-Regular"), local("Source Code Pro Regular"), url("../font/SourceCodePro-Regular.ttf");
+  font-family: source;
 }
 
 *,
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  font-family: roboto;
+  font-family: source, monospace;
 }
 
 ::-moz-selection {
@@ -308,6 +308,12 @@ svg {
   position: relative;
 }
 
+@media screen and (max-height: 650px) and (max-width: 600px) {
+  .nav__menu {
+    margin-top: 7rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .nav__menu {
     visibility: hidden;
@@ -369,7 +375,7 @@ svg {
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 5px;
+  height: 4px;
   background-color: aliceblue;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -442,12 +448,12 @@ svg {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: calc(100vh - 16.6rem);
+  min-height: calc(100vh - 16rem);
 }
 
 @media screen and (max-width: 1200px) {
   .carousel {
-    min-height: calc(100vh - 15rem);
+    min-height: calc(100vh - 14.4rem);
   }
 }
 

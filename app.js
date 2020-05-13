@@ -119,11 +119,11 @@ const navigation = document.querySelector(".nav");
 const nav = document.querySelector(".nav__menu");
 const burger = document.querySelector(".burger");
 const navLi = document.querySelectorAll(".nav__item");
+
 navigation.addEventListener("click", (e) => {
   if (e.target.tagName === "A") {
     nav.classList.toggle("nav-active");
     burger.classList.toggle("toggle");
-    document.body.classList.toggle("overflow");
   }
 });
 
@@ -142,7 +142,7 @@ burger.addEventListener("click", () => {
 
   //burger animation
   burger.classList.toggle("toggle");
-  document.body.classList.toggle("overflow");
+  navigation.classList.toggle("overflow");
 });
 
 // show button toTop button on scroll

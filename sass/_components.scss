@@ -183,7 +183,9 @@ svg {
     justify-content: center;
     align-items: center;
     position: relative;
-
+    @media screen and (max-height: 650px) and (max-width: 600px) {
+      margin-top: 7rem;
+    }
     @include res(smTab) {
       visibility: hidden;
       position: fixed;
@@ -224,7 +226,7 @@ svg {
       bottom: 0;
       left: 0;
       width: 0%;
-      height: 5px;
+      height: 4px;
       background-color: $clr-white;
       transition: 0.3s ease-in-out;
     }
@@ -286,9 +288,9 @@ svg {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: calc(100vh - 16.6rem);
+  min-height: calc(100vh - 16rem);
   @include res(lgTab) {
-    min-height: calc(100vh - 15rem);
+    min-height: calc(100vh - 14.4rem);
   }
   @include res(smTab) {
     min-height: calc(100vh - 26.3rem);
