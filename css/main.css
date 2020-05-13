@@ -318,12 +318,6 @@ svg {
   position: relative;
 }
 
-@media screen and (max-height: 650px) and (max-width: 600px) {
-  .nav__menu {
-    margin-top: 7rem;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .nav__menu {
     visibility: hidden;
@@ -584,7 +578,7 @@ svg {
 @media screen and (max-width: 600px) {
   #nextSlide,
   #previous {
-    top: 65%;
+    top: 64%;
   }
 }
 
